@@ -1,0 +1,10 @@
+name: 'Tile optimizer'
+description: 'Optimizes on the fly the map for WorkAdventure.'
+inputs:
+  map-file:  # id of input
+    description: 'The map file (in JSON Tiled format) to optimize. If empty, all files of the repo will be scanned'
+    required: false
+    default: ''
+runs:
+  using: 'node14'
+  main: 'src/action.js'
