@@ -1,4 +1,5 @@
 const glob = require("glob");
+const path = require("path");
 const core = require('@actions/core');
 const github = require('@actions/github');
 const { isJsonTiledMap, optimizeMap } = require('map-optimizer');
@@ -15,7 +16,9 @@ try {
     }
 
     for (let mapFile of mapFiles) {
-        optimizeMap(mapFile, '.', 1, 0xffffff00);
+        let mapDir = path.dirname(mapFile);
+        let outputDir = path.resolve(process.env.GITHUB_WORKSPACE ? process.env.GITHUB_WORKSPACE : '.', mapDir);
+        optimizeMap(mapFile, outputDir, 1, 0xffffff00);
     }
 } catch (error) {
     console.error(error);
