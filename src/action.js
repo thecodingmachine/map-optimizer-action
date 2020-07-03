@@ -14,8 +14,8 @@ try {
         mapFiles = mapFiles.filter(isJsonTiledMap);
     }
 
-    for (let mapFile in mapFiles) {
-        optimizeMap(mapFile);
+    for (let mapFile of mapFiles) {
+        optimizeMap(mapFile, '.', 1, 0xffffff00);
     }
 } catch (error) {
     console.error(error);
