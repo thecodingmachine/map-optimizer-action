@@ -1,7 +1,7 @@
 const glob = require("glob");
 const core = require('@actions/core');
 const github = require('@actions/github');
-const { isJsonTiledMap, processTileset } = require('./tiledOptimizer');
+const { isJsonTiledMap, processTileset } = require('map-optimizer/src/tiledOptimizer');
 
 try {
     let mapFiles = [];
