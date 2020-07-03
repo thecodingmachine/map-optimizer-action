@@ -1,7 +1,7 @@
 const glob = require("glob");
 const core = require('@actions/core');
 const github = require('@actions/github');
-const { isJsonTiledMap, processTileset } = require('map-optimizer');
+const { isJsonTiledMap, optimizeMap } = require('map-optimizer');
 
 try {
     let mapFiles = [];
@@ -15,7 +15,7 @@ try {
     }
 
     for (let mapFile in mapFiles) {
-        processTileset(mapFile);
+        optimizeMap(mapFile);
     }
 } catch (error) {
     console.error(error);
