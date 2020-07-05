@@ -562,7 +562,7 @@ macos-release@^2.2.0:
 
 "map-optimizer@https://github.com/thecodingmachine/map-optimizer.git#master":
   version "1.0.0"
-  resolved "https://github.com/thecodingmachine/map-optimizer.git#475f0dbc35ba3372b31a990b0955e657b2488b2b"
+  resolved "https://github.com/thecodingmachine/map-optimizer.git#6f041a6a7ed3c7dbf890c2f5ddde712d6ae435af"
   dependencies:
     commander "^5.1.0"
     glob "^7.1.6"
