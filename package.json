@@ -3,7 +3,7 @@
   "description": "A GitHub action to automatically optimize a map in Tiled JSON format for usage in Phaser 3 game engine.",
   "version": "1.0.0",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^3.0.0",
     "map-optimizer": "https://github.com/thecodingmachine/map-optimizer.git#master"
   },
